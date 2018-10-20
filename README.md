@@ -1,3 +1,8 @@
+# Attention
+**DO NOT deploy** this code to anywhere.
+
+Some dependencies has potential security vulnerabilities.
+
 # book-proto
 
 > A Vue.js project

@@ -30,10 +30,9 @@
                     <v-card-text>{{ book.shortDescription }}</v-card-text>
                     <v-card-action>
                       <v-btn
-                        class='book-rental'
                         name='isbn13'
                         :value='book.isbn13'
-                        @click='onRentalClicked'>
+                        @click='onChechoutClicked(book.id)'>
                         Rental
                       </v-btn>
                     </v-card-action>
@@ -128,8 +127,8 @@ export default {
         alert('error: bookSearch\n' + error)
       })
     },
-    onRentalClicked: function (event) {
-      console.log('onRentalClicked')
+    onChechoutClicked: function (event) {
+      console.log('onChechoutClicked')
       console.log(event.srcElement.value)
       console.log(event.value)
     }

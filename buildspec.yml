@@ -5,11 +5,7 @@ phases:
     commands:
       - pip install --upgrade pip
       - pip install --upgrade awscli
-      - npm install -g n
-      - n latest
       - npm update -g npm
-      - npm install
-      - npm -g --unsafe-perm install node-sass
       - npm install
   build:
     commands:
